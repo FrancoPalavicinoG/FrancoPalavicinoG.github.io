@@ -78,3 +78,8 @@ th, td {
     text-align: center;
     font-size: 20px;
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }
