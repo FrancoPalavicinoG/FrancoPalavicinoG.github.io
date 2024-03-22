@@ -5,73 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> lab 1 franco palavicino </title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
     <body class=body>
-        <h1 class=color> Lab 1 Web Technologies </h1>
-        <h3 class="subheader"> Personal Page </h3>
-        <div class="border"> 
-            <p class =p> Franco Palavicino </p>
-            <p class =p> Computer Science Civil Engineering UANDES, 2021</p>
-            <p class =p> Link to my Github:
-                <a style="color: #021e00;" href="https://github.com/FrancoPalavicinoG"> FrancoPalavicinoG </a> 
-            </p>
-            <p class =p> Personal summary:</p>
-            <p class =p> Mountain biking and outdoor sports enthusiast who likes coding! </p>
-        </div>
-        <table class="skill_table">
-            <tr>
-            <td>Skill</td>
-            <td>Level</td>
-            </tr>
-            <tr class="table_color">
-            <td>Python</td>
-            <td>Advance</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Basic</td>
-            </tr>
-            <tr class="table_color">
-                <td>HTML/CSS</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Git</td>
-                <td>Advance</td>
-            </tr>
-            <tr class="table_color">
-                <td>Excel</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>Advance</td>
-            </tr>
-            <tr class="table_color">
-                <td>Ruby</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>English</td>
-                <td>Advance</td>
-            </tr>
-            <tr class="table_color">
-                <td>Spanish</td>
-                <td>Native</td>
-            </tr>
-        </table>
-        <input class="input" type="text" id="input" placeholder=" Rate my work">
-        <button class="button" onclick="buttonInput()">Enter</button>
-        <script>
-            function buttonInput() {
-                var elemntToDisplay = document.getElementById("input").value; 
-                var newElement = document.createElement('p'); 
-                newElement.textContent = elemntToDisplay; 
-                document.getElementById("answer").appendChild(newElement); 
-            }
-        </script>
-        <div class="border"> 
-            <div class="answer" id="answer"> Grade: </div>
-        </div>
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="container-fluid">
+                        <h1 class=color> Lab 2 Web Technologies </h1>
+                        <h3 class="subheader"> Personal Page </h3>
+                        <div class="border"> 
+                            <p class =p> Franco Palavicino </p>
+                            <p class =p> Computer Science Civil Engineering UANDES, 2021</p>
+                            <p class =p> Link to my Github:
+                                <a style="color: #021e00;" href="https://github.com/FrancoPalavicinoG"> FrancoPalavicinoG </a> 
+                            </p>
+                            <p class =p> Personal summary:</p>
+                            <p class =p> Mountain biking and outdoor sports enthusiast who likes coding! </p>
+                        </div>
+                    </div>
+                </div>
+              <div class="col">
+                <div class="container-fluid">
+                    <table class="skill_table">
+                        <tr>
+                        <td>Skill</td>
+                        <td>Level</td>
+                        </tr>
+                        <tr class="table_color">
+                        <td>Python</td>
+                        <td>Advance</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr class="table_color">
+                            <td>HTML/CSS</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>Git</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr class="table_color">
+                            <td>Excel</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr class="table_color">
+                            <td>Ruby</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr class="table_color">
+                            <td>Spanish</td>
+                            <td>Native</td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="col">
+                <div class="container-fluid">
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert" style="margin-top: 100px;">
+                        <strong>Welcome to my personal page!</strong> Please don't forget to leave a rating
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <input class="input" type="text" id="input" placeholder=" Rate my work">
+                    <button class="button" onclick="buttonInput()">Enter</button>
+                    <script>
+                        function buttonInput() {
+                            var elemntToDisplay = document.getElementById("input").value; 
+                            var newElement = document.createElement('p'); 
+                            newElement.textContent = elemntToDisplay; 
+                            document.getElementById("answer").appendChild(newElement); 
+                        }
+                    </script>
+                    <div class="border"> 
+                        <div class="answer" id="answer"> Grade: </div>
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
