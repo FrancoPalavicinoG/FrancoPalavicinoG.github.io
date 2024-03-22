@@ -15,24 +15,54 @@
                         <h1 class=color> Lab 2 Web Technologies </h1>
                         <h3 class="subheader"> Personal Page </h3>
                         <div class="border"> 
-                            <p class =p> Franco Palavicino </p>
+                            <p class =p> <strong> Franco Palavicino</strong>  </p>
                             <p class =p> Computer Science Civil Engineering UANDES, 2021</p>
-                            <p class =p> Link to my Github:
-                                <a style="color: #021e00;" href="https://github.com/FrancoPalavicinoG"> FrancoPalavicinoG </a> 
-                            </p>
-                            <p class =p> Personal summary:</p>
-                            <p class =p> Mountain biking and outdoor sports enthusiast who likes coding! </p>
-                            <button type="button" class="btn btn-secondary"
-                                    data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-custom-class="custom-tooltip"
-                                    data-bs-title="Im just learning how to use bootstrap :/">
-                                    Button??
-                            </button>
+                            <div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Link to my Github
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <a style="color: #021e00;" href="https://github.com/FrancoPalavicinoG"> <strong> FrancoPalavicinoG</strong> </a> 
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Personal summary
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>Mountain biking and outdoor sports enthusiast who likes coding!</strong>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        In Progress...
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Waiting to add more experiences to the resume</strong> 
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                     </div>
                 </div>
               <div class="col">
                 <div class="container-fluid">
+                    <h5 class="subheader"> Skill Table</h5>
                     <table class="skill_table">
                         <tr>
                         <td>Skill</td>
